@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AgreeView">
+        <!--动画移动最终距离-->
+        <attr name="distance" format="integer"/>
+        <!--动画起始位置-->
+        <attr name="from_y" format="integer"/>
+        <!--动画开始透明度-->
+        <attr name="from_alpha" format="float"/>
+        <!--动画结束透明度-->
+        <attr name="to_alpha" format="float"/>
+        <!--持续时间-->
+        <attr name="duration" format="integer"/>
+        <!--动画显示的文字-->
+        <attr name="text" format="string"/>
+        <!--动画文字大小-->
+        <attr name="text_size" format="integer"/>
+        <!--动画颜色-->
+        <attr name="text_color" format="color"/>
+        <!--点赞图片-->
+        <attr name="img" format="reference"/>
+        <!--动画图片-->
+        <attr name="animation_img" format="reference"/>
+        <!--动画选择是图片还是文字-->
+        <attr name="animation" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="img" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:agreeview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lt.agreeview.MainActivity">
+
+    <com.lt.agreeview.AgreeView
+        android:id="@+id/agreeView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        agreeview:animation="text"
+        agreeview:animation_img="@drawable/ic_favorite_black_24dp"
+        agreeview:distance="100"
+        agreeview:from_y="60"
+        agreeview:layout_constraintBottom_toBottomOf="parent"
+        agreeview:layout_constraintEnd_toStartOf="@+id/agreeView3"
+        agreeview:layout_constraintHorizontal_bias="0.5"
+        agreeview:layout_constraintStart_toStartOf="parent"
+        agreeview:layout_constraintTop_toTopOf="parent"
+        agreeview:text="我喜欢你+1"
+        agreeview:text_color="@color/text_color">
+    </com.lt.agreeview.AgreeView>
+
+    <com.lt.agreeview.AgreeView
+        android:id="@+id/agreeView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        agreeview:animation="img"
+        agreeview:animation_img="@drawable/ic_grade_black_24dp"
+        agreeview:distance="100"
+        agreeview:from_y="60"
+        agreeview:layout_constraintBottom_toBottomOf="@+id/agreeView4"
+        agreeview:layout_constraintEnd_toEndOf="parent"
+        agreeview:layout_constraintHorizontal_bias="0.5"
+        agreeview:img="@drawable/ic_grade_black_24dp"
+        agreeview:layout_constraintStart_toEndOf="@+id/agreeView4"
+        agreeview:layout_constraintTop_toTopOf="@+id/agreeView4"
+        agreeview:text_color="@color/text_color">
+    </com.lt.agreeview.AgreeView>
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>
